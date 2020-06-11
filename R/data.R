@@ -26,28 +26,3 @@
 "groundfish"
 
 
-# lter ladybeetle ---------------------------------------------------------
-#' Groundfish data title
-#'
-#' Description here
-#' here
-#' here
-#'
-#' @docType data
-#'
-#' @usage data(ladybeetle)
-#'
-#' @format An object of class XXX.
-#'
-#' @keywords datasets
-#'
-#' @references Pedersen et al. something or other
-#' (\href{url or doi here}{publisher})
-#'
-#' @source \href{url or doi here}{citation or poublisher whatever}
-#'
-#' @examples
-#' data(groundfish)
-
-"ladybeetle"
-
