@@ -11,13 +11,13 @@ An object of class S3 (tibble) with dimensions 6,696 × 4.
 \href{url or doi here}{citation or poublisher whatever}
 }
 \usage{
-data(seddon2014)
+data(seddondiatoms)
 }
 \description{
 Data from publication....more description here.
 }
 \examples{
-data(seddon2014)
+data(seddondiatoms)
 }
 \references{
 (\href{url or doi here}{publisher})
