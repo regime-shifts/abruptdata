@@ -14,5 +14,7 @@ Depends:
 Imports: 
     dplyr,
     shiny,
-    shinyjs
+    shinyjs, 
+    tibble, 
+    maggritr
  
