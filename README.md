@@ -1,16 +1,9 @@
 # abruptdata
 Data package comprising ecological datasets exhibiting abrupt change and relevant data suitable for evaluating methods for detecting abrupt change and ecological regime shifts. 
 <!-- badges: start -->
-![R lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)
-[![R build status](https://github.com/regime-shifts/abruptdata/workflows/R-CMD-check/badge.svg)](https://github.com/regime-shifts/abruptdata/actions)
+![R lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)[![R build status](https://github.com/regime-shifts/abruptdata/workflows/R-CMD-check/badge.svg)](https://github.com/regime-shifts/abruptdata/actions)
 <!-- badges: end -->
 
-## Installation
-You can install the in-development version of abrupt from GitHub with:
-
-``` r
-remotes::install_github("regime-shifts/abrupt")
-```
 
 This package serves two purposes:
 1. Provide standardized data for the R package [regime-shifts/abrupt](github.com/regime-shifts/abrupt)
@@ -18,6 +11,13 @@ This package serves two purposes:
 
 We welcome data contributions, but please follow code of conduct.
 
+
+## Installation
+You can install the in-development version of abrupt from GitHub with:
+
+``` r
+remotes::install_github("regime-shifts/abrupt")
+```
 ## Contributing Data
 Instructions go here-this is a draft but:
 Step 1. Fork the repository  
