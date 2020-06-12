@@ -26,6 +26,6 @@ seddon2014 <- seddon %>%
 usethis::use_data(seddon2014, overwrite = TRUE)
 
 
-# Add the data description to data/data.R  --------------------------------
+# Add the data description to R/data.R  --------------------------------
 
 
