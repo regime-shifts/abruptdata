@@ -15,14 +15,21 @@ everglades.taxa$site <- rownames(everglades.taxa)
 ## combine data and convert to long format
 everglades <- everglades.env %>%
   # join and convert to tibble
-  left_join(everglades.taxa, by="site") %>%
+  dplyr::left_join(everglades.taxa, by="site") %>%
   as_tibble() %>%
   # long form
-  pivot_longer(cols=c(ABLARHAM:ZAVRMARM), names_to="variable", values_to="value") %>%
+  tidyr::pivot_longer(cols=c(ABLARHAM:ZAVRMARM), names_to="variable", values_to="value") %>%
   # remove punctuation and spaces from site names
-  mutate(site = gsub("[ [:punct:]]", "",site)) %>%
+  dplyr::mutate(site = gsub("[ [:punct:]]", "",site)) %>%
   # add generic name for sort column
-  rename(gradient = TP.ugL)
+  dplyr::rename(gradient = TP.ugL)
+
+# Metadata -------------------------------------------------------
+## column desriptions and units
+# gradient: surface-water total phosphorus in micrograms/liter
+# site: name of sampling station
+# variable: macroinvertebrate taxa names
+# value: macroinvertebrate densities in number/meter-squared
 
 # Save the data as .rda ---------------------------------------------------
 # usethis::use_data(everglades, overwrite = TRUE) # uncomment this line and run it.
