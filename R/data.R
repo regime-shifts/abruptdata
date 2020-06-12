@@ -1,4 +1,5 @@
 # Datasets ----------------------------------------------------------------
+# These datasets are real cool.
 
 # seddondiatoms --------------------------------------------------------------
 #' Seddon Diatoms data
@@ -6,16 +7,15 @@
 #' Data from publication....more description here.
 #'
 #' @docType data
-#' @usage data(seddon2014)
+#' @usage data(seddondiatoms)
 #' @format An object of class S3 (tibble) with dimensions 6,696 × 4.
 #' @keywords datasets, regime shift, diatoms
 #' @references
 #' (\href{url or doi here}{publisher})
 #'
 #' @source \href{url or doi here}{citation or poublisher whatever}
-#'
 #' @examples
-#' data(seddon2014)
+#' data(seddondiatoms)
 
 "seddondiatoms"
 
@@ -37,11 +37,3 @@
 #' data(groundfish)
 
 "groundfish"
-
-
-
-
-
-
-
-
