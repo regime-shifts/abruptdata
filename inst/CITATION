@@ -4,15 +4,7 @@ citEntry(
   entry    = "abuptR",
   title    = "`abruptdata` R Package and Database",
   author   = "Jessica Burnett and Xavier Benito and Kristin Braziunas",
-  journal  = ,
-  year     = ,
-  volume   = ,
-  number   = ,
-  pages    = ,
-  url      = "http://www.github.com/regime-shifts/abruptdata",
-  textVersion = paste(
-
+  url      = "http://www.github.com/regime-shifts/abruptdata"
   )
-)
 
 citFooter("If you use individual datasets for your work, please cite the original authors. Citation information and additional references are provided in the description of each dataset.")
