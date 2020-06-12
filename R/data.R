@@ -1,7 +1,7 @@
 # Datasets ----------------------------------------------------------------
 
-# seddon2014 --------------------------------------------------------------
-#' Seddon data title
+# seddondiatoms --------------------------------------------------------------
+#' Seddon Diatoms data
 #'
 #' Data from publication....more description here.
 #'
@@ -17,7 +17,7 @@
 #' @examples
 #' data(seddon2014)
 
-"seddon2014"
+"seddondiatoms"
 
 # groundfish --------------------------------------------------------------
 #' Groundfish data title
