@@ -13,10 +13,11 @@ Depends:
     R (>= 2.10),
     dplyr,
     magrittr,
-    tibble 
+    tibble
 Imports: 
     shiny,
-    shinyjs, 
+    shinyjs,
+    tidyr
 Suggests:
     devtools,
     roxygen2,
