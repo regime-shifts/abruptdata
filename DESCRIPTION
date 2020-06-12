@@ -13,8 +13,8 @@ Depends:
     R (>= 2.10)
 Imports: 
     dplyr,
+    magrittr,
     shiny,
     shinyjs, 
-    tibble, 
-    magrittr
- 
+    tibble 
+RoxygenNote: 7.1.0

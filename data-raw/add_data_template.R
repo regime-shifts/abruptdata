@@ -13,7 +13,8 @@ DATASET <- as_tibble(datasets::beaver2)
 ## The data should be in a LONG format
 
 # For this example dataset, we need to create a new variable which adds 2400 hours (1 day) to the values with day==308, such that we have a single, temporal variable along which the methods are analysed
-DATASET$time.new <- ifelse(DATASET$day == 307, DATASET$time, DATASET$time+2400)
+DATASET$time.new <-
+  ifelse(DATASET$day == 307, DATASET$time, DATASET$time + 2400)
 
 # Remove unnecessary columns. This is opitonal.
 DATASET <- DATASET %>%
@@ -31,8 +32,8 @@ DATASET <- DATASET %>%
 
 DATASET <- DATASET %>%
   dplyr::rename(time = time.new,
-         value=temp)
-
+                value = temp)
 
 # Save the data as .rda ---------------------------------------------------
-# usethis::use_data(DATASET, overwrite = TRUE)
+# usethis::use_data(DATASET, overwrite = TRUE) # uncomment this line and run it.
+
