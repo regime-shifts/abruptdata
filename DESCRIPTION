@@ -16,5 +16,5 @@ Imports:
     shiny,
     shinyjs, 
     tibble, 
-    maggritr
+    magrittr
  
