@@ -16,7 +16,7 @@ We welcome data contributions, but please follow code of conduct.
 You can install the in-development version of abrupt from GitHub with:
 
 ``` r
-remotes::install_github("regime-shifts/abrupt")
+remotes::install_github("regime-shifts/abruptdata")
 ```
 ## Contributing Data
 Instructions go here-this is a draft but:
