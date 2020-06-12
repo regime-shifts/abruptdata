@@ -6,7 +6,7 @@ Data package comprising ecological datasets exhibiting abrupt change and relevan
 
 
 This package serves two purposes:
-1. Provide standardized data for the R package [regime-shifts/abrupt](github.com/regime-shifts/abrupt)
+1. Provide standardized data for the R package [regime-shifts/abruptdata](github.com/regime-shifts/abruptdata)
 2. Inform a database for applying or evaluating statistical methods for identifying ecological regime shifts or abrupt changes
 
 We welcome data contributions, but please follow code of conduct.
