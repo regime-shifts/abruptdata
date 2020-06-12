@@ -2,8 +2,11 @@ Package: abruptdata
 Type: Package
 Title: Data package for ecological regime shift and abrupt change methods
 Version: 0.1.0
-Authors@R: person("Jessica", "Burnett", email="jburnett@usgs.gov", role = c("aut", "cre"))
-Maintainer@R: person("Jessica", "Burnett", email="jburnett@usgs.gov", role = c("aut", "cre"))
+Authors@R: as.person(c(
+    "Jessica Burnett <jburnett@usgs.gov> [aut, cre]", 
+    "Xavier Benito <EMAIL@EMAIL.com> [ctb]", 
+    "Kristin Braziunas <EMAIL@EMAIL.com> [ctb]"
+  ))
 Description: Data package containing ecological datasets to support application and evaluation of abrupt change and regime shift detection methods. 
     This package contains empirical and simulated data that can be used to apply various regime shift or abrupt change detection methods on ecological data. 
 License: MIT + file LICENSE
