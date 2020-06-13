@@ -1,12 +1,16 @@
 url: https://regime-shifts.github.io/abruptdata/
 
+
+authors:
+  Jessica Burnett:
+    href: https://github.com/trashbirdecology
+
 home:
   title: An R package for metadata for ecological datasets exhibiting abrupt change or regime shifts
   description: This package and repository collects and standardizes ecological datasets which exhibit either abrupt change or are recommended for use as 'null' data when testing the methods for detecting abrupt change. The package also serves data and metadata, and directly serves the R package [__abrupt__](http://github.com/regime-shifts/abrupt)
 
 template:
   params:
-    bootswatch: simplex
     ganalytics: UA-144017064-2
 
 repo:
