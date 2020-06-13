@@ -11,7 +11,7 @@ groundfish <- merge(gf_spatial_info, gf_spatiotemporal) %>% as_tibble()
 
 
 # Naming convention -------------------------------------------------------
-groundfish %>%
+groundfish<-groundfish %>%
   dplyr::rename(time=year,
          value=weight_kg,
          long=longitude,
@@ -22,5 +22,6 @@ groundfish %>%
 
 # Save the data as .rda ---------------------------------------------------
 usethis::use_data(groundfish, overwrite = TRUE)
+
 
 
