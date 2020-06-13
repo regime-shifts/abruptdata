@@ -1,4 +1,4 @@
-citHeader("To cite the abruptdata R package or database in publications use:")
+citHeader("To cite the abruptdata R package or metadata repository, please use the following citation:")
 
 citEntry(
   entry    = "Unpublished",
@@ -14,4 +14,4 @@ citEntry(
     )
   )
 
-citFooter("If you use individual datasets for your work, please cite the original authors. Citation information and additional references are provided in the description of each dataset.")
+citFooter("If you use individual datasets for your work, please cite the original authors.. Citation information and additional references are provided in the description of each dataset.")
