@@ -15,6 +15,9 @@ repo:
     source: https://github.com/regime-shifts/abruptdata/blob/master/
     issue: https://github.com/regime-shifts/abruptdata/issues
 
+development:
+  mode: auto
+
 reference:
 - title: "Datasets"
   desc: >

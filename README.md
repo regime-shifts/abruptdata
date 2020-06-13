@@ -24,7 +24,7 @@ There are two methods for contributing 'new' data to the abruptdata R package an
 ### Method 1 (preferred): submit new data and documentation via a GitHub pull request
 1. Fork the repository  
 2. Add the data 
-  - Identify a short, intuitive name {{dataset}} for your contributed dataset. For example dataset names and to ensure {{dataset}} does not conflict with existing data, see [our list of datasets here](https://github.com/regime-shifts/abruptdata/tree/master/data).  
+  - Identify a short, intuitive name {{dataset}} for your contributed dataset. For example dataset names and to ensure {{dataset}} does not conflict with existing data, see [our list of datasets here](https://regime-shifts.github.io/abruptdata/reference/index.html).  
   - Copy the file or contents within the file ./data-raw/add-data-template.R into a new file, /data-raw/{{dataset}}.R
   - Edit and run the file /data-raw/{{dataset}}.R. Running ./data-raw/{{dataset}}.R will create save the munged dataset as a .rda file in  location ./data/{{dataset}}.rda.  
 3. While working within the abruptdata project directory, build the documentation for the data    
