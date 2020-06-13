@@ -22,7 +22,7 @@ data(seddondiatoms)
 \references{
 (\href{url or doi here}{publisher})
 }
-\keyword{datasets,}
-\keyword{diatoms}
+\keyword{dataset,}
+\keyword{diatom}
 \keyword{regime}
 \keyword{shift,}

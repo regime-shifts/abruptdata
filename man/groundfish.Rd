@@ -8,7 +8,7 @@
 An object of class S3 (tibble) with dimensions 105,879 × 9.
 }
 \source{
-\href{url or doi here}{citation or poublisher whatever}
+\href{url or doi here}{citation or publisher here}
 }
 \usage{
 data(groundfish)
@@ -23,7 +23,10 @@ data(groundfish)
 Pedersen et al. something or other
 (\href{url or doi here}{publisher})
 }
-\keyword{datasets,}
-\keyword{groundfish}
+\keyword{abrupt}
+\keyword{change}
+\keyword{community,}
+\keyword{dataset,}
+\keyword{fish,}
 \keyword{regime}
 \keyword{shift,}
