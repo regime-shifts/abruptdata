@@ -7,3 +7,4 @@ home:
 template:
   params:
     bootswatch: simplex
+    ganalytics: UA-144017064-2
