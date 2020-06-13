@@ -31,3 +31,7 @@ reference:
   - seddondiatoms
 - title: "Metadata"
   desc: "Functions for creating metadata for contributed datasets"
+- title: "Vignettes"
+  desc: ~
+  contents: '``'
+
