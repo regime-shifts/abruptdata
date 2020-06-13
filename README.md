@@ -1,9 +1,8 @@
 # abruptdata
-Data package comprising ecological datasets exhibiting abrupt change and relevant data suitable for evaluating methods for detecting abrupt change and ecological regime shifts. 
 <!-- badges: start -->
 ![R lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)[![R build status](https://github.com/regime-shifts/abruptdata/workflows/R-CMD-check/badge.svg)](https://github.com/regime-shifts/abruptdata/actions)
 <!-- badges: end -->
-
+Data package comprising ecological datasets exhibiting abrupt change and relevant data suitable for evaluating methods for detecting abrupt change and ecological regime shifts. 
 
 This package serves two purposes:
 1. Provide standardized data for the R package [regime-shifts/abruptdata](github.com/regime-shifts/abruptdata)
