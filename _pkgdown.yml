@@ -8,3 +8,19 @@ template:
   params:
     bootswatch: simplex
     ganalytics: UA-144017064-2
+
+repo:
+  url:
+    home: https://github.com/regime-shifts/abruptdata
+    source: https://github.com/regime-shifts/abruptdata/blob/master/
+    issue: https://github.com/regime-shifts/abruptdata/issues
+
+reference:
+- title: "Datasets"
+  desc: >
+    A list of datasets currently available. Click each dataset for more information.
+  contents:
+  - groundfish
+  - seddondiatoms
+- title: "Metadata"
+  desc: "Functions for creating metadata for contributed datasets"
