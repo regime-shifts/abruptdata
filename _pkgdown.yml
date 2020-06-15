@@ -16,7 +16,7 @@ template:
 repo:
   url:
     home: https://github.com/regime-shifts/abruptdata
-    source: https://github.com/regime-shifts/abruptdata/blob/master/
+    source: https://github.com/regime-shifts/abruptdata/blob/main/
     issue: https://github.com/regime-shifts/abruptdata/issues
 
 development:
