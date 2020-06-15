@@ -32,7 +32,7 @@ There are two methods for contributing 'new' data to the abruptdata R package an
   - Directly edit the /R/data.R with new fields to describe {{dataset}}. Follow the conventions used in other datasets, and provide as much detail as possible
   - (INSTRUCTIONS TBA) Provide attributes and factors table
   - (INSTRUCTIONS TBA) Open an issue using the "new data: metadata" template.
-5. Submit pull request to reigme-shifts/abruptdata/MASTER; wait for approval.   
+5. Submit pull request to reigme-shifts/abruptdata/MAIN; wait for approval.   
 
 ### Method 2 (not preferred): TBA
 This method will include an option to send the maintainer(s) the code, the original data (or link to retrievable data), and metadata associated with the data. 
