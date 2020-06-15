@@ -22,7 +22,7 @@ seddon <- as_tibble(read.csv("data-raw/seddondiatoms.csv", header=TRUE))
 # Munging and follow package naming convention -------------------------------------------------------
 seddondiatoms <- seddon %>%
   dplyr::select(-Depth) %>%
-  tidyr::gather(variable, value, -Age) %>%
+  tidyr::gather(variable, value, -Age,-Ti, -d13C) %>%
   dplyr::rename(time = Age) %>%
   dplyr::mutate(site = "Diablas")
 
