@@ -37,3 +37,22 @@
 #' data(groundfish)
 
 "groundfish"
+
+# everglades --------------------------------------------------------------
+#' Everglades data title
+#'
+#' Data from publication....more description here.
+#'
+#' @docType data
+#' @usage data(everglades)
+#' @format An object of class S3 (tibble) with dimensions 20,664 × 4.
+#' @keywords dataset, everglades, community, abrupt change
+#' @references reference goes here
+#' (\href{url or doi here}{publisher})
+#'
+#' @source \href{url or doi here}{citation or publisher here}
+#'
+#' @examples
+#' data(everglades)
+
+"everglades"
