@@ -3,11 +3,11 @@ citHeader("To cite the abruptdata R package or metadata repository, please use t
 citEntry(
   entry    = "Unpublished",
   title    = "abruptdata R Package and Database",
-  author   = "Jessica Burnett and Xavier Benito and Kristin Braziunas",
+  author   = "Jessica Burnett and Xavier Benito and Kristin Braziunas and Trisha Spanbauer",
   url      = "http://www.github.com/regime-shifts/abruptdata",
   note     = "R package under development",
   textVersion=
-    paste("Burnett, Jessica L., Xavier Benito, and Kristin Braziunas (2020)",
+    paste("Burnett, Jessica L., Xavier Benito, Kristin Braziunas, Trisha Spanbauer (2020)",
           "abruptdata R Package and Database",
           "Development status: experimental. ",
           "http://www.github.com/regime-shifts/abruptdata"

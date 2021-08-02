@@ -7,7 +7,7 @@ gf_spatiotemporal <- read.csv("data-raw/groundfish_spatiotemporal.csv") # spatio
 
 # Munging -----------------------------------------------------------------
 # append the spatial information to the spatiotemporal data
-groundfish <- merge(gf_spatial_info, gf_spatiotemporal) %>% as_tibble()
+groundfish <- merge(gf_spatial_info, gf_spatiotemporal)
 
 
 # Naming convention -------------------------------------------------------
@@ -19,6 +19,7 @@ groundfish<-groundfish %>%
          site=stratum,
          variable=taxa_name
          )
+
 
 # Save the data as .rda ---------------------------------------------------
 usethis::use_data(groundfish, overwrite = TRUE)

@@ -1,9 +1,2 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
-^data-raw$
-^CODE_OF_CONDUCT\.md$
-^LICENSE\.md$
-^_pkgdown\.yml$
-^docs$
-^pkgdown$
-^\.github$

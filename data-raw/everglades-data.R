@@ -3,11 +3,11 @@
 # used in Baker & King 2010 (https://www.doi.org/10.1111/j.2041-210X.2009.00007.x)
 
 # Variable Metadata -------------------------------------------------------
-## column desriptions and units
-# TP.ugL: surface-water total phosphorus in micrograms/liter
-# site: name of sampling station
-# variable: macroinvertebrate taxa names
-# value: macroinvertebrate densities in number/meter-squared
+    ## column desriptions and units
+    # TP.ugL: surface-water total phosphorus in micrograms/liter
+    # site: name of sampling station
+    # variable: macroinvertebrate taxa names
+    # value: macroinvertebrate densities in number/meter-squared
 
 # Import the original data ---------------------------------------------------------
 everglades.env <- read.table("data-raw/everglades_env.txt")
@@ -20,8 +20,6 @@ everglades.taxa$site <- rownames(everglades.taxa)
 
 ## combine data and convert to long format
 everglades <- everglades.env %>%
-  # convert to tibble
-  as_tibble() %>%
   # join taxa with environemntal variables
   dplyr::left_join(everglades.taxa, by="site") %>%
   # long form
@@ -30,6 +28,8 @@ everglades <- everglades.env %>%
   dplyr::mutate(site = gsub("[ [:punct:]]", "",site)) %>%
   # force site to factor
   dplyr::mutate(site=as.factor(site))
+
+
 
 # Save the data as .rda ---------------------------------------------------
 usethis::use_data(everglades, overwrite = TRUE) # uncomment this line and run it.

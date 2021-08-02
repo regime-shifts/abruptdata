@@ -30,8 +30,7 @@ Encoding: UTF-8
 Depends: 
     R (>= 2.10),
     dplyr,
-    magrittr,
-    tibble
+    magrittr
 Imports: 
     shiny,
     shinyjs,
@@ -40,7 +39,6 @@ Suggests:
     devtools,
     roxygen2,
     testthat,
-    usethis,
     knitr,
     rmarkdown
 RoxygenNote: 7.1.0
