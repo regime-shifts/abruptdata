@@ -1,17 +1,16 @@
-citHeader("To cite the abruptdata R package or metadata repository, please use the following citation:")
+citHeader("To cite the abruptdata R package or database, please use the following citation:")
 
 citEntry(
   entry    = "Unpublished",
   title    = "abruptdata R Package and Database",
   author   = "Jessica Burnett and Xavier Benito and Kristin Braziunas and Trisha Spanbauer",
   url      = "http://www.github.com/regime-shifts/abruptdata",
-  note     = "R package under development",
+ s note     = "R package under development. Status: Experimental.",
   textVersion=
     paste("Burnett, Jessica L., Xavier Benito, Kristin Braziunas, Trisha Spanbauer (2020)",
           "abruptdata R Package and Database",
-          "Development status: experimental. ",
           "http://www.github.com/regime-shifts/abruptdata"
     )
   )
 
-citFooter("If you use individual datasets for your work, please cite the original authors.. Citation information and additional references are provided in the description of each dataset.")
+citFooter("If you use individual datasets for your work, please cite the original dataset.Citation information and additional references are provided in the description of each dataset.")
