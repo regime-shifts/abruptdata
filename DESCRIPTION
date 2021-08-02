@@ -1,6 +1,6 @@
 Package: abruptdata
 Type: Package
-Title: Data package for ecological regime shift and abrupt change methods
+Title: Abrupt Changes and Regime Shifts in Ecological Data
 Version: 0.1.0
 Authors@R: 
     c(person(given = "Jessica",
