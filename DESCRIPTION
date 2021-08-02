@@ -27,11 +27,8 @@ Description: Data package containing ecological datasets to support application 
     This package contains empirical and simulated data that can be used to apply various regime shift or abrupt change detection methods on ecological data. 
 License: CC0
 Encoding: UTF-8
-Depends: 
-    R (>= 2.10),
-    dplyr,
-    magrittr
 Imports: 
+    magrittr,
     shiny,
     shinyjs,
     tidyr
@@ -46,3 +43,5 @@ URL: https://regime-shifts.github.io/abruptdata, https://github.com/regime-shift
 BugReports: https://github.com/regime-shifts/abruptdata/issues
 LazyData: true
 VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)

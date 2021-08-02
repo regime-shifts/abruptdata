@@ -13,6 +13,8 @@
 everglades.env <- read.table("data-raw/everglades_env.txt")
 everglades.taxa <- read.table("data-raw/everglades_taxa.txt")
 
+library(magrittr) ## this needs to be moved for package build
+
 # Munging -------------------------------------------------------
 ## add row names as column
 everglades.env$site <- rownames(everglades.env)
