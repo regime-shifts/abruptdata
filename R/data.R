@@ -1,8 +1,5 @@
-# Datasets ----------------------------------------------------------------
-# These datasets are real cool.
-
 # seddondiatoms --------------------------------------------------------------
-#' Seddon Diatoms data
+#' Diatoms - Seddon et al. (YYYY)
 #'
 #' Data from publication....more description here.
 #'
@@ -20,7 +17,7 @@
 "seddondiatoms"
 
 # groundfish --------------------------------------------------------------
-#' Groundfish data title
+#' Groundfish data title will go here
 #'
 #' Data from publication....more description here.
 #'
@@ -39,7 +36,7 @@
 "groundfish"
 
 # everglades --------------------------------------------------------------
-#' Everglades data title
+#' Everglades data title will go here
 #'
 #' Data from publication....more description here.
 #'

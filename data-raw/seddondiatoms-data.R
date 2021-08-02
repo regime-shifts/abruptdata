@@ -1,16 +1,5 @@
-## This script is a template for adding data to the r package regime-shifts-abruptdata
-## An example using R package `datasets` is provided here.
-## For an example importing the data from .csv or .txt, please see groundfish-data.R
-
-
-# About the data ----------------------------------------------------------
-## This data was retrieved from publication and can be retrieved directly <URL/doi>.
-## The metadata for this data is provided following the EML at <url>.
-
-# Brief overview of the data.
-
 # Import the original data ---------------------------------------------------------
-seddon <- as_tibble(read.csv("data-raw/seddondiatoms.csv", header=TRUE))
+seddon <- read.csv("data-raw/seddondiatoms.csv", header=TRUE)
 # Relevant columns in the original data include:
     # Depth         - depth in cm
     # Age           - calibrated ages

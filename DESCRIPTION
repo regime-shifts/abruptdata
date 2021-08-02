@@ -1,6 +1,6 @@
 Package: abruptdata
 Type: Package
-Title: Data package for ecological regime shift and abrupt change methods
+Title: Abrupt Changes and Regime Shifts in Ecological Data
 Version: 0.1.0
 Authors@R: 
     c(person(given = "Jessica",
@@ -25,14 +25,10 @@ Authors@R:
              comment = c(ORCID = "0000-0000-0000-0000")))
 Description: Data package containing ecological datasets to support application and evaluation of abrupt change and regime shift detection methods. 
     This package contains empirical and simulated data that can be used to apply various regime shift or abrupt change detection methods on ecological data. 
-License: MIT + file LICENSE
+License: CC0
 Encoding: UTF-8
-Depends: 
-    R (>= 2.10),
-    dplyr,
-    magrittr,
-    tibble
 Imports: 
+    magrittr,
     shiny,
     shinyjs,
     tidyr
@@ -40,7 +36,6 @@ Suggests:
     devtools,
     roxygen2,
     testthat,
-    usethis,
     knitr,
     rmarkdown
 RoxygenNote: 7.1.0
@@ -48,3 +43,5 @@ URL: https://regime-shifts.github.io/abruptdata, https://github.com/regime-shift
 BugReports: https://github.com/regime-shifts/abruptdata/issues
 LazyData: true
 VignetteBuilder: knitr
+Depends: 
+    R (>= 2.10)
