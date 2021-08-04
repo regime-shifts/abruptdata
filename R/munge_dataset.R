@@ -15,8 +15,7 @@ munge_dataset <- function(data, attributes) {
 
 
   # vars of interest
-  attrs <- c("driverAttribute", "responseAttribute", "treatmentAttribute", "blockingAttribute")
-
+  attrs <- c("driverAttribute", "responseAttribute", "treatmentAttribute", "blockingAttribute","siteAttribute","envgradientAttribute","temporalAttribute")
 
 # gather the relevant column names for each variable type -----------------
 for(i in seq_along(attrs)){
@@ -31,20 +30,13 @@ if(nrow(temp)==0)next()
 temp <- data.frame(attributeType = eval(expression(attrs[i])),
                              attributeName=temp$attributeName)
 
-if(i==1){ index <- temp}else(index <-bind_rows (df, temp))
+if(i==1){index <- temp}else(index <-bind_rows (df, temp))
 rm(temp)
+
 } # end loop for creating index dataframe
 
-
 # Munge the dataset to have conforming variable names ---------------------
-head(data,2)
-index
-
-
-
-
-
-
+data <- merge(index, data)
 
 
 
