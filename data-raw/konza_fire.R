@@ -1,3 +1,6 @@
+### konza_fire dataset
+
+
 # Script for downloading and munging the dataset used in Ratajczak et al. (2017)
 # DATA: https://datadryad.org/stash/dataset/doi:10.5061/dryad.h45mr
 
@@ -14,7 +17,7 @@ attributes <- read.csv("data-raw/metadata/konza_fire_attributes.csv")
 
 
 # Munge the data according to attributes table ----------------------------
-
+konza_fire <- munge_dataset(data, attributes)
 
 
 # Save to package ---------------------------------------------------------
