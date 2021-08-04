@@ -54,8 +54,8 @@
 
 "everglades"
 
-# stegnersimulations --------------------------------------------------------------
-#' stegnersimulations data title will go here
+# stegnersimulation --------------------------------------------------------------
+#' stegnersimulation data title will go here
 #'
 #' Code from Stegner et al (2019) Inferring critical transitions in paleoecological time series with irregular sampling and variable time-averaging. Quaternary Science Reviews 207: 49-63 DOI: 10.1016/j.quascirev.2019.01.009
 
