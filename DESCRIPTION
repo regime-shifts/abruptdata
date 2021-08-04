@@ -31,7 +31,8 @@ Imports:
     magrittr,
     shiny,
     shinyjs,
-    tidyr
+    tidyr,
+    rdryad
 Suggests:
     devtools,
     roxygen2,

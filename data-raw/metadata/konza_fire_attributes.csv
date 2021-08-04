@@ -1,0 +1,8 @@
+﻿attributeName,attributeDefinition,unit,attributeType,driverAttribute,responseAttribute,treatmentAttribute,siteAttribute,geospatialAttribute,ecologicalGradientAttribute,temporalAttribute
+Watershed_designation,,site identifier,factor,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+Fire_treatment,The fire frequency treatment that each plot was assigned for analysis,treatment classifier,factor,TRUE,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE
+Year,,year,integer,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,TRUE
+Plot_number,10m^2 circular plots at 10m intervals within each Transect_number,sampling unit,nominal,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+Transect_number,,site identifier,nominal,FALSE,FALSE,FALSE,TRUE,FALSE,FALSE,FALSE
+Grass_cover,summed cover of the four dominant C4 grasses species,percentage (but can exceed 100),numerical,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
+Shrub_cover,summed cover of shrub and tree species that consistently maintain foliage above the grass layer.,percentage (but can exceed 100),numerical,FALSE,TRUE,FALSE,FALSE,FALSE,FALSE,FALSE
