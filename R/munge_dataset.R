@@ -4,12 +4,13 @@
 #'
 #' @param data The dataset being created
 #' @param attributes The attributes table describing the variables existing in *data*
+#' @param df.citation Default NULL. Ideally a string containing the citation for the dataset in use in the style of .bibtex.
 #' @importFrom  rlang parse_expr
 #' @importFrom dplyr filter
 #' @importFrom dplyr bind_rows
 #'
 
-munge_dataset <- function(data, attributes, df.citation) {
+munge_dataset <- function(data, attributes, df.citation=NULL) {
   # First, ensure all defined attributes exist in the data
   if (!all(unique(attributes$attributeName) %in% colnames(data))) {
     stop("Mismatch in column names among the `attributes` and `data` objects ")
@@ -22,6 +23,7 @@ munge_dataset <- function(data, attributes, df.citation) {
 if(exists("index")){rm(index)}
 
 for(i in seq_along(attrs)){
+  if(i==1) index <- NULL
  if(!eval(expression(attrs[i])) %in% colnames(attributes))next(paste0("Skipping ", attrs[i], ": variable not found in attributes table"))
 
 temp <- attributes %>%
@@ -38,12 +40,13 @@ suppressWarnings(rm(temp))
 
 } # end loop for creating index dataframe
 
+
 # Create a list containing the attributes and the dataset -----------------
   data <- tibble::as_tibble(data) # Force data to tibble
 
 # Add metadata and citation information as attributes to the tibble --------------------------------
 # Grab the citation information
-if(!exists("df.citation")){df.citation <-
+if(is.null(df.citation)){df.citation <-
   "No citation for this dataset was provided in `munge_dataset()`";
    message(df.citation);
 }

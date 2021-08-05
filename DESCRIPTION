@@ -40,7 +40,8 @@ Suggests:
     usethis,
     knitr,
     rmarkdown,
-    spelling
+    spelling, 
+    rdryad
 RoxygenNote: 7.1.0
 URL: https://regime-shifts.github.io/abruptdata, https://github.com/regime-shifts/abruptdata
 BugReports: https://github.com/regime-shifts/abruptdata/issues
