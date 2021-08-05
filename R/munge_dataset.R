@@ -9,12 +9,11 @@
 #' @importFrom dplyr bind_rows
 #'
 
-munge_dataset <- function(data, attributes) {
+munge_dataset <- function(data, attributes, df.citation) {
   # First, ensure all defined attributes exist in the data
   if (!all(unique(attributes$attributeName) %in% colnames(data))) {
-    stop("Mismatch in column names among the attributes and data. ")
+    stop("Mismatch in column names among the `attributes` and `data` objects ")
   }
-
 
   # vars of interest
   attrs <- c("driverAttribute", "responseAttribute", "treatmentAttribute", "blockingAttribute","siteAttribute","envgradientAttribute","temporalAttribute")
@@ -39,10 +38,29 @@ suppressWarnings(rm(temp))
 
 } # end loop for creating index dataframe
 
-
 # Create a list containing the attributes and the dataset -----------------
-mylist <- list("dataset"=data, "attributes"=index)
+  data <- tibble::as_tibble(data) # Force data to tibble
 
-return(mylist)
+# Add metadata and citation information as attributes to the tibble --------------------------------
+# Grab the citation information
+if(!exists("df.citation")){df.citation <-
+  "No citation for this dataset was provided in `munge_dataset()`";
+   message(df.citation);
+}
+
+  attr(data, "citation") <- df.citation
+  attr(data, "metadata") <- tibble::tibble(index)
+
+  # This function forces the attributes to print when the data frame is printed.
+  # We might want to implement this for the  label $citation.
+  # class(data) <- c("my_tbl", class(data))
+  #      print.my_tbl <- function(x) {
+  #         NextMethod(x)
+  #        print(attr(x,"metadata"))
+  #        print(attr(x,"citation"))
+  #        invisible(x)
+  #      }
+
+return(data)
 
   } # end function
