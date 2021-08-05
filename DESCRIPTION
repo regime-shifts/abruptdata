@@ -29,14 +29,13 @@ License: CC0
 Encoding: UTF-8
 Imports: 
     magrittr,
-    shiny,
-    shinyjs,
-    tidyr,
-    rdryad
+    dplyr,
+    tidyr
 Suggests:
     devtools,
     roxygen2,
     testthat,
+    usethis,
     knitr,
     rmarkdown
 RoxygenNote: 7.1.0
