@@ -17,13 +17,7 @@ remotes::install_github("regime-shifts/abruptdata")
 
 ## Contributing Data
 
-1. Fork the repository  
-2. Add the original data to /data-raw/
-3. Identify a short, intuitive name {{dataset}} for your contributed dataset. For example dataset names and to ensure {{dataset}} does not conflict with existing data, see [our list of datasets here](https://regime-shifts.github.io/abruptdata/reference/index.html).  
-  - Copy the file or contents within the file ./data-raw/add-data-template.R into a new file, /data-raw/{{dataset}}.R
-4. Add metadata describing the new dataset to /R/data.R/. Directly edit the /R/data.R with new fields to describe {{dataset}}. Follow the conventions used in other datasets, and provide as much detail as possible
-5. Submit pull request to reigme-shifts/abruptdata/MAIN and wait for approval or feedback.   
-
+tba
 ## Code of Conduct
 Please note that the abrupt project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
 
