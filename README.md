@@ -2,22 +2,23 @@
 <!-- badges: start -->
 ![R lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)[![R build status](https://github.com/regime-shifts/abruptdata/workflows/R-CMD-check/badge.svg)](https://github.com/regime-shifts/abruptdata/actions)![pkgdown](https://github.com/regime-shifts/abruptdata/workflows/pkgdown/badge.svg?branch=main)
 <!-- badges: end -->
-
+<!-- 
 `abruptdata` is an R package comprising ecological datasets exhibiting abrupt change. These data can or have been used to demonstrate ecological regime shifts or abrupt change in empirical and simulated systems, and may be suitable for evaluating quantitative methods for detecting such changes. 
 
 This package serves two purposes:
 1. Provide standardized data for the R package [regime-shifts/abruptdata](github.com/regime-shifts/abruptdata)
 2. Inform a database for applying or evaluating statistical methods for identifying ecological regime shifts or abrupt changes
-
+-->
 ## Installation
 Install the in-development version of `abruptdata` from GitHub by calling:
 ``` r
 remotes::install_github("regime-shifts/abruptdata")
 ```
-
+<!-- 
 ## Contributing Data
 
 tba
+-->
 ## Code of Conduct
 Please note that the abrupt project is released with a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html). By contributing to this project, you agree to abide by its terms.
 
