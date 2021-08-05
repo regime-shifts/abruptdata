@@ -10,13 +10,12 @@ url <- "https://datadryad.org/stash/downloads/file_stream/40212"
 tempfn <- tempfile()
 download.file(url, destfile = tempfn)
 
-
 # Import files --------------------------------------------------------
 data <- read.csv(tempfn) # the original data
-attributes <- read.csv("data-raw/metadata/konza_fire_attributes.csv")
+attributes <- read.csv("data-raw/metadata/attributes-fire-konza-ratajczak.csv")
 
 # Munge the data according to attributes table ----------------------------
-konza_fire_ratajczak <- munge_dataset(data, attributes)
+fire_konza_ratajczak <- munge_dataset(data, attributes)
 
 # Save to package ---------------------------------------------------------
-usethis::use_data(konza_fire_ratajczak, overwrite = TRUE)
+usethis::use_data(fire_konza_ratajczak, overwrite = TRUE)
