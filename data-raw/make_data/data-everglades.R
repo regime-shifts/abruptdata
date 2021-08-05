@@ -13,15 +13,13 @@
 everglades.env <- read.table("data-raw/everglades_env.txt")
 everglades.taxa <- read.table("data-raw/everglades_taxa.txt")
 
-library(magrittr) ## this needs to be moved for package build
-
-# Munging -------------------------------------------------------
+# Pre-munging the observations dataset -------------------------------------------------------
 ## add row names as column
 everglades.env$site <- rownames(everglades.env)
 everglades.taxa$site <- rownames(everglades.taxa)
 
 ## combine data and convert to long format
-everglades <- everglades.env %>%
+data <- everglades.env %>%
   # join taxa with environemntal variables
   dplyr::left_join(everglades.taxa, by="site") %>%
   # long form
@@ -32,6 +30,11 @@ everglades <- everglades.env %>%
   dplyr::mutate(site=as.factor(site))
 
 
+# Load attributes ---------------------------------------------------------
+attributes <- read.csv("data-raw/metadata/attributes-everglades-baker.csv")
+
+# Create package standard dataset -----------------------------------------
+everglades <- munge_dataset(data, attributes)
 
 # Save the data as .rda ---------------------------------------------------
 usethis::use_data(everglades, overwrite = TRUE) # uncomment this line and run it.

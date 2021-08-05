@@ -1,0 +1,14 @@
+﻿attributeName,attributeDefinition,unit,attributeType,driverAttribute,responseAttribute,treatmentAttribute,siteAttribute,geospatialAttribute,ecologicalGradientAttribute,temporalAttribute
+Block    , ID of 2*2 km landscape block.,,,,,,,,,
+Transect , ID of 50-m sampling transect within each landscape block.,,,,,,,,,
+Tree     , ID of tree within each sampling transect. Multiple row for a tree means that the tree has more than one stem (one row per stem).,,,,,,,,,
+Species  , Tree species. BP,,,,,,,,,
+Diam     , Diameter of stem in cm at 1.3 m height. ,Betula pubescens. Jun , Juniperus communis. SA , Salix spp.,,,,,,
+Height   , Height category of stem. 1 ,,,,,,,,,
+Single   , Categorical variable indicating if a tree is single-stemmed or has multiple stems. S , 1.3ñ2 m. 2 , 2-4 m. 3 , >4 m.,,,,,,
+Vital    , Vitality category of stem. L , Single-stemmed (monocormic). M , Multi_stemmed (polycormic).,,,,,,,
+Basal    , Presence of basal sprouts for a tree. 0 , Living stem with no visible loss of branches. L1 , living stem with <1/3 of branches dead. L2 , living stem with 1/3-2/3 of branches dead. L3 , living stem with >2/3 of branches dead. D , Dead stem without foliage. ,,,,
+Sapl     , Number of saplings per transect.  , No sprouts. 1 , 1-10 sprouts. 2 , >10 sprouts.   ,,,,,,
+Meters   , Length of sampling transect in meters.,,,,,,,,,
+Period   , Year of sampling. 2010 or 2016.  ,year,,,,,,,,TRUE
+  ,,,,,,,,,,

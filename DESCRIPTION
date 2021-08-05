@@ -1,7 +1,7 @@
 Package: abruptdata
 Type: Package
 Title: Abrupt Changes and Regime Shifts in Ecological Data
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     c(person(given = "Jessica",
              family = "Burnett",
@@ -29,15 +29,19 @@ License: CC0
 Encoding: UTF-8
 Imports: 
     magrittr,
-    shiny,
-    shinyjs,
-    tidyr
+    dplyr,
+    tidyr,
+    timetk,
+    rlang (>= 0.1.2)
 Suggests:
     devtools,
     roxygen2,
     testthat,
+    usethis,
     knitr,
-    rmarkdown
+    rmarkdown,
+    spelling, 
+    rdryad
 RoxygenNote: 7.1.0
 URL: https://regime-shifts.github.io/abruptdata, https://github.com/regime-shifts/abruptdata
 BugReports: https://github.com/regime-shifts/abruptdata/issues
@@ -45,3 +49,4 @@ LazyData: true
 VignetteBuilder: knitr
 Depends: 
     R (>= 2.10)
+Language: en-US
