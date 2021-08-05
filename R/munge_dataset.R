@@ -4,7 +4,9 @@
 #'
 #' @param data The dataset being created
 #' @param attributes The attributes table describing the variables existing in *data*
-#' @importFrom  rlang parse_expr()
+#' @importFrom  rlang parse_expr
+#' @importFrom dplyr filter
+#' @importFrom dplyr bind_rows
 #'
 
 munge_dataset <- function(data, attributes) {
@@ -18,8 +20,9 @@ munge_dataset <- function(data, attributes) {
   attrs <- c("driverAttribute", "responseAttribute", "treatmentAttribute", "blockingAttribute","siteAttribute","envgradientAttribute","temporalAttribute")
 
 # gather the relevant column names for each variable type -----------------
+if(exists("index")){rm(index)}
+
 for(i in seq_along(attrs)){
- if(exists("index") & i==1){rm(index)}
  if(!eval(expression(attrs[i])) %in% colnames(attributes))next(paste0("Skipping ", attrs[i], ": variable not found in attributes table"))
 
 temp <- attributes %>%
@@ -30,15 +33,16 @@ if(nrow(temp)==0)next()
 temp <- data.frame(attributeType = eval(expression(attrs[i])),
                              attributeName=temp$attributeName)
 
-if(i==1){index <- temp}else(index <-bind_rows (df, temp))
-rm(temp)
+if(!exists("index")){index <- temp;}
+if(exists("index"))(index <-dplyr::bind_rows(index, temp))
+suppressWarnings(rm(temp))
 
 } # end loop for creating index dataframe
 
-# Munge the dataset to have conforming variable names ---------------------
-data <- merge(index, data)
 
+# Create a list containing the attributes and the dataset -----------------
+mylist <- list("dataset"=data, "attributes"=index)
 
+return(mylist)
 
-
-} # end function
+  } # end function
