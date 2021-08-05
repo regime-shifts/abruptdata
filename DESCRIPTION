@@ -1,7 +1,7 @@
 Package: abruptdata
 Type: Package
 Title: Abrupt Changes and Regime Shifts in Ecological Data
-Version: 0.1.0
+Version: 0.1.1
 Authors@R: 
     c(person(given = "Jessica",
              family = "Burnett",
@@ -30,7 +30,8 @@ Encoding: UTF-8
 Imports: 
     magrittr,
     dplyr,
-    tidyr
+    tidyr,
+    timetk
 Suggests:
     devtools,
     roxygen2,
