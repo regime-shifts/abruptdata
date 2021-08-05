@@ -31,14 +31,16 @@ Imports:
     magrittr,
     dplyr,
     tidyr,
-    timetk
+    timetk,
+    rlang (>= 0.1.2)
 Suggests:
     devtools,
     roxygen2,
     testthat,
     usethis,
     knitr,
-    rmarkdown
+    rmarkdown,
+    spelling
 RoxygenNote: 7.1.0
 URL: https://regime-shifts.github.io/abruptdata, https://github.com/regime-shifts/abruptdata
 BugReports: https://github.com/regime-shifts/abruptdata/issues
@@ -46,3 +48,4 @@ LazyData: true
 VignetteBuilder: knitr
 Depends: 
     R (>= 2.10)
+Language: en-US
