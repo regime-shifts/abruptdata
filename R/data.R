@@ -1,21 +1,21 @@
 
-# konza_fire --------------------------------------------------------------
+# konza_fire_ratajczak --------------------------------------------------------------
 #' Konza LTER Fires - Ratajczak et al.
 #'
 #' Konza LTER Fire Dataset
 #'
 #' @docType data
 #' @usage data(konza_fire)
-#' @format An object of class S3 (data.frame) with dimensions 17,300 × 9.
+#' @format A list of two elements: c('dataset','attributes'). Dataset contains the original data. Attributes describe the use of each variable in the paper referenced.
 #' @keywords dataset, regime shift, lter, fire, controlled burn
 #' @references
 #' (\href{url or doi here}{publisher})
 #'
 #' @source \href{url or doi here}{citation or poublisher whatever}
 #' @examples
-#' data(konza_fire)
+#' data(konza_fire_ratajczak)
 
-"konza_fire"
+"konza_fire_ratajczak"
 
 # seddondiatoms --------------------------------------------------------------
 #' Diatoms - Seddon et al. (YYYY)

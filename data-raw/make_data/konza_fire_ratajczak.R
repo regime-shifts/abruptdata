@@ -15,10 +15,8 @@ download.file(url, destfile = tempfn)
 data <- read.csv(tempfn) # the original data
 attributes <- read.csv("data-raw/metadata/konza_fire_attributes.csv")
 
-
 # Munge the data according to attributes table ----------------------------
-konza_fire <- munge_dataset(data, attributes)
-
+konza_fire_ratajczak <- munge_dataset(data, attributes)
 
 # Save to package ---------------------------------------------------------
-usethis::use_data(konza_fire, overwrite = TRUE)
+usethis::use_data(konza_fire_ratajczak, overwrite = TRUE)
