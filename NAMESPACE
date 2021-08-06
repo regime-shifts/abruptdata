@@ -2,6 +2,7 @@
 
 export("%>%")
 importFrom(dplyr,bind_rows)
+importFrom(dplyr,distinct)
 importFrom(dplyr,filter)
 importFrom(magrittr,"%>%")
 importFrom(rlang,parse_expr)

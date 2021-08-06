@@ -8,6 +8,7 @@
 #' @importFrom  rlang parse_expr
 #' @importFrom dplyr filter
 #' @importFrom dplyr bind_rows
+#' @importFrom dplyr distinct
 #'
 
 munge_dataset <- function(data, attributes, df.citation=NULL) {
