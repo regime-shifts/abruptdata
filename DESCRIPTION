@@ -30,6 +30,7 @@ Encoding: UTF-8
 Imports: 
     magrittr,
     dplyr,
+    tibble,
     tidyr,
     timetk,
     rlang (>= 0.1.2)

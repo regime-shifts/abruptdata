@@ -1,17 +1,3 @@
 citHeader("To cite abruptdata in publications use: TO BE UPDATED")
 
-citEntry(
-  entry    = "Software",
-  title    = ,
-  author   = ,
-  journal  = ,
-  year     = ,
-  volume   = ,
-  number   = ,
-  pages    = ,
-  url      = ,
-  textVersion = paste(
-
-  )
-)
 

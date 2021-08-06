@@ -11,7 +11,7 @@ An object of class S3 (tibble) with dimensions 6,696 × 4.
 \href{url or doi here}{citation or poublisher whatever}
 }
 \usage{
-data(seddondiatoms)
+data(diatoms_galapagos)
 }
 \description{
 Data from publication....more description here.

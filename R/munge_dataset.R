@@ -5,12 +5,12 @@
 #' @param data The dataset being created
 #' @param attributes The attributes table describing the variables existing in *data*
 #' @param df.citation Default NULL. Ideally a string containing the citation for the dataset in use in the style of .bibtex.
-#' @importFrom  rlang parse_expr
+#' @importFrom rlang parse_expr
 #' @importFrom dplyr filter
 #' @importFrom dplyr bind_rows
 #' @importFrom dplyr distinct
+#' @importFrom tibble as_tibble
 #'
-
 munge_dataset <- function(data, attributes, df.citation=NULL) {
   # First, ensure all defined attributes exist in the data
   if (!all(unique(attributes$attributeName) %in% colnames(data))) {

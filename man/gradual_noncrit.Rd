@@ -23,7 +23,6 @@ data("gradual_noncrit")
 Stegner, Ratajczak, Carpenter, & Williams (2019) Inferring critical transitions in paleoecological time series with irregular sampling and variable time-averaging. Quaternary Science Reviews 207: 49-63
 (\href{10.1016/j.quascirev.2019.01.009}{publisher})
 }
-\keyword{code,}
 \keyword{cover}
 \keyword{simulation,}
 \keyword{woody}
