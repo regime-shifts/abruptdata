@@ -11,13 +11,13 @@ A list of two elements: c('dataset','attributes'). Dataset contains the original
 \href{url or doi here}{citation or poublisher whatever}
 }
 \usage{
-data(konza_fire)
+fire_konza_ratajczak
 }
 \description{
 Konza LTER Fire Dataset
 }
 \examples{
-data(fire_konza_ratajczak)
+data("fire_konza_ratajczak")
 }
 \references{
 (\href{url or doi here}{publisher})
