@@ -9,9 +9,18 @@
     # variable: macroinvertebrate taxa names
     # value: macroinvertebrate densities in number/meter-squared
 
+
+# Provide citation --------------------------------------------------------
+
+# df.citation <- "CITATION GOES HERE"
+
 # Import the original data ---------------------------------------------------------
 everglades.env <- read.table("data-raw/everglades_env.txt")
 everglades.taxa <- read.table("data-raw/everglades_taxa.txt")
+
+
+# Load attributes ---------------------------------------------------------
+attributes <- read.csv("data-raw/metadata/attributes-everglades-baker.csv")
 
 # Pre-munging the observations dataset -------------------------------------------------------
 ## add row names as column
@@ -22,16 +31,11 @@ everglades.taxa$site <- rownames(everglades.taxa)
 data <- everglades.env %>%
   # join taxa with environemntal variables
   dplyr::left_join(everglades.taxa, by="site") %>%
-  # long form
-  tidyr::pivot_longer(cols=c(ABLARHAM:ZAVRMARM), names_to="variable", values_to="value") %>%
   # remove punctuation and spaces from site names
   dplyr::mutate(site = gsub("[ [:punct:]]", "",site)) %>%
-  # force site to factor
-  dplyr::mutate(site=as.factor(site))
-
-
-# Load attributes ---------------------------------------------------------
-attributes <- read.csv("data-raw/metadata/attributes-everglades-baker.csv")
+ # force site to factor
+  dplyr::mutate(site=as.factor(site)) %>%
+  tidyr::pivot_longer(c(-TP.ugL, -site), names_to="taxa", values_to="values")
 
 # Create package standard dataset -----------------------------------------
 everglades <- munge_dataset(data, attributes)

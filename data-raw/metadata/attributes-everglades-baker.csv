@@ -1,4 +1,5 @@
-﻿attributeName,attributeDefinition,unit,driverAttribute,responseAttribute
-TP.ugL,surface-water total phosphorus,micrograms/liter,TRUE,FALSE
-site,name of sampling station,,FALSE,FALSE
-variable,macroinvertebrate taxa names,,FALSE,FALSE
+﻿attributeName,attributeDefinition,unit,driverAttribute,responseAttribute,siteAttribute,groupingAttribute
+TP.ugL,surface-water total phosphorus,micrograms/liter,TRUE,FALSE,,
+site,name of sampling station,,FALSE,FALSE,TRUE,
+taxa,macroinvertebrate taxa names,,FALSE,FALSE,,TRUE
+values,Some measure of macroinverts,,FALSE,TRUE,,
