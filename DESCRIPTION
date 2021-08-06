@@ -25,7 +25,7 @@ Authors@R:
              comment = c(ORCID = "0000-0000-0000-0000")))
 Description: Data package containing ecological datasets to support application and evaluation of abrupt change and regime shift detection methods. 
     This package contains empirical and simulated data that can be used to apply various regime shift or abrupt change detection methods on ecological data. 
-License: CC0
+License: MIT + file LICENSE
 Encoding: UTF-8
 Imports: 
     magrittr,

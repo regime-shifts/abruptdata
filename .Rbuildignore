@@ -2,3 +2,4 @@
 ^\.Rproj\.user$
 ^/R/build_all_datasets\.r$
 ^\.github$
+^LICENSE\.md$
