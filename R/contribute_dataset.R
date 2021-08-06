@@ -9,11 +9,23 @@
 # open data.R and add documentation
 # build and cmd check
 fun <- function(){
+  new.dataset <- NULL
+  ## Gather basic characteristics about the data.
+  name <- readline("What is the name of the dataset? Please see README for naming convention.")
 
-  name <- readline("What is the name of the dataset? Please conform to: taxa_system_leadauth naming convention")
+  license.check <- menu(c("Yes", "No", "I'm not sure"),
+                        title = "Is this data published or available for use by the public? E.g., data has license CC0, MIT, etc.?")
   loc.ind <- menu(c("Yes", "No"),
-                   "Is the data available for download via a link?")
+                   "Is the data available for download via a public link?")
+  if(license.check==3 & loc.ind==2) {stop("We cannot include data that is not publicly aviable and/or does not specify 'open' use license. Please submit an issue if you have questions or concerns. https://github.com/regime-shifts/abruptdata/issues")}
 
+  ## write function to either grab from dryad, or another DB, or just direct, single file
+  if(loc.ind==1){
+    # If at Dryad, user should submit the location, DOI,
+    temp <- menu(c("",""),  "")
+
+  }
+  # if()
 
   t <- readline("What are the T values?")
   v <- readline("What are the V values?")
