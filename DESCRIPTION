@@ -42,7 +42,7 @@ Suggests:
     rmarkdown,
     spelling, 
     rdryad
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 URL: https://regime-shifts.github.io/abruptdata, https://github.com/regime-shifts/abruptdata
 BugReports: https://github.com/regime-shifts/abruptdata/issues
 LazyData: true

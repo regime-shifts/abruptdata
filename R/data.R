@@ -1,4 +1,4 @@
-# konza_fire_ratajczak --------------------------------------------------------------
+# fire_konza_ratajczak --------------------------------------------------------------
 #' Konza LTER Fires - Ratajczak et al.
 #'
 #' Konza LTER Fire Dataset
@@ -12,11 +12,11 @@
 #'
 #' @source \href{url or doi here}{citation or poublisher whatever}
 #' @examples
-#' data(konza_fire_ratajczak)
+#' data(fire_konza_ratajczak)
 
-"konza_fire_ratajczak"
+"fire_konza_ratajczak"
 
-# seddondiatoms --------------------------------------------------------------
+# diatoms_galapagos --------------------------------------------------------------
 #' Diatoms - Seddon et al. (YYYY)
 #'
 #' Data from publication....more description here.
@@ -30,9 +30,9 @@
 #'
 #' @source \href{url or doi here}{citation or poublisher whatever}
 #' @examples
-#' data(seddondiatoms)
+#' data(diatoms_galapagos)
 
-"seddondiatoms"
+"diatoms_galapagos"
 
 # groundfish --------------------------------------------------------------
 #' Groundfish data title will go here
@@ -72,10 +72,10 @@
 
 "everglades"
 
-# stegnersimulation --------------------------------------------------------------
-#' stegnersimulation data title will go here
+# gradual_noncrit --------------------------------------------------------------
+#' Simulated Data Exhibiting Gradual Non-Critical Shift
 #'
-#' Code from Stegner et al (2019) Inferring critical transitions in paleoecological time series with irregular sampling and variable time-averaging. Quaternary Science Reviews 207: 49-63 DOI: 10.1016/j.quascirev.2019.01.009
+#' Code adapted from Stegner et al (2019) Inferring critical transitions in paleoecological time series with irregular sampling and variable time-averaging. Quaternary Science Reviews 207: 49-63 DOI: 10.1016/j.quascirev.2019.01.009
 
 #'
 #' @docType code
@@ -89,6 +89,71 @@
 #' @source \href{url or doi here}{citation or publisher here}
 #'
 #' @examples
-#' data(stegnersimulation)
+#' data(gradual_noncrit)
 
-"stegnersimulation"
+"gradual_noncrit"
+
+# gradual_crit--------------------------------------------------------------
+#' Simulated Data for Gradual Critical Transition
+#'
+#' Code adapted from Stegner et al (2019) Inferring critical transitions in paleoecological time series with irregular sampling and variable time-averaging. Quaternary Science Reviews 207: 49-63 DOI: 10.1016/j.quascirev.2019.01.009
+
+#'
+#' @docType code
+#' @usage code(stegnersimulation)
+#' @format .R  document
+#' @keywords code, simulation, woody cover
+#' @references  Stegner, Ratajczak, Carpenter, & Williams (2019) Inferring critical transitions in paleoecological time series with irregular sampling and variable time-averaging. Quaternary Science Reviews 207: 49-63
+
+#' (\href{10.1016/j.quascirev.2019.01.009}{publisher})
+#'
+#' @source \href{url or doi here}{citation or publisher here}
+#'
+#' @examples
+#' data(gradual_crit)
+
+"gradual_crit"
+
+
+# abrupt_crit--------------------------------------------------------------
+#' Simulated Data for Data Exhibiting Abrupt Critical Transition
+#'
+#' Code adapted from Stegner et al (2019) Inferring critical transitions in paleoecological time series with irregular sampling and variable time-averaging. Quaternary Science Reviews 207: 49-63 DOI: 10.1016/j.quascirev.2019.01.009
+
+#'
+#' @docType code
+#' @usage code(stegnersimulation)
+#' @format .R  document
+#' @keywords code, simulation, woody cover
+#' @references  Stegner, Ratajczak, Carpenter, & Williams (2019) Inferring critical transitions in paleoecological time series with irregular sampling and variable time-averaging. Quaternary Science Reviews 207: 49-63
+
+#' (\href{10.1016/j.quascirev.2019.01.009}{publisher})
+#'
+#' @source \href{url or doi here}{citation or publisher here}
+#'
+#' @examples
+#' data(abrupt_crit)
+
+"abrupt_crit"
+
+# no_change--------------------------------------------------------------
+#' Simulated Data for Data Exhibiting No Transition
+#'
+#' Code adapted from Stegner et al (2019) Inferring critical transitions in paleoecological time series with irregular sampling and variable time-averaging. Quaternary Science Reviews 207: 49-63 DOI: 10.1016/j.quascirev.2019.01.009
+
+#'
+#' @docType code
+#' @usage code(stegnersimulation)
+#' @format .R  document
+#' @keywords code, simulation, woody cover
+#' @references  Stegner, Ratajczak, Carpenter, & Williams (2019) Inferring critical transitions in paleoecological time series with irregular sampling and variable time-averaging. Quaternary Science Reviews 207: 49-63
+
+#' (\href{10.1016/j.quascirev.2019.01.009}{publisher})
+#'
+#' @source \href{url or doi here}{citation or publisher here}
+#'
+#' @examples
+#' data(no_change)
+
+"no_change"
+

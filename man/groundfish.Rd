@@ -3,7 +3,7 @@
 \docType{data}
 \name{groundfish}
 \alias{groundfish}
-\title{Groundfish data title}
+\title{Groundfish data title will go here}
 \format{
 An object of class S3 (tibble) with dimensions 105,879 × 9.
 }

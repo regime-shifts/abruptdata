@@ -3,7 +3,7 @@
 \docType{data}
 \name{everglades}
 \alias{everglades}
-\title{Everglades data title}
+\title{Everglades data title will go here}
 \format{
 An object of class S3 (tibble) with dimensions 20,664 × 4.
 }
